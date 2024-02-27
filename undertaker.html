@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="buttonone">
+        <button class="btns" style="background-color: greenyellow; color: black; width: 180px; padding: 9px; border-radius: 20px; font-weight: 600; border: none;">Let's Talk <strong style="font-size: 20px;">✋</strong></button>
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Form</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="name">Name:</label>
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div style="margin-top: 20px;">
+                        <label for="email">Email:</label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div style="margin-top: 20px;">
+                        <label for="message">Message:</label>
+                    </div>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" id="submit" style="margin-top: 30px;">Submit</button>
+                    <div id="responseMessage" style="margin-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".btns").click(function() {
+                $("#myModal").modal("show");
+            });
+
+            // Add any additional logic for form submission or closing the modal here
+        });
+    </script>
+
+</body>
+
+</html>
