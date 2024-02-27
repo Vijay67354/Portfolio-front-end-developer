@@ -2361,18 +2361,18 @@ transform:rotate(360deg);}*/
         }
     </style>
     <script>
-        $(document).ready(function() {
-            // Check if the modal has been shown before
-            var modalShown = localStorage.getItem('modalShown');
+        // $(document).ready(function() {
+        //     // Check if the modal has been shown before
+        //     var modalShown = localStorage.getItem('modalShown');
 
-            if (!modalShown) {
-                // If not shown, display the modal
-                $("#myModal").modal('show');
+        //     if (!modalShown) {
+        //         // If not shown, display the modal
+        //         $("#myModal").modal('show');
 
-                // Mark the modal as shown in local storage
-                localStorage.setItem('modalShown', 'true');
-            }
-        });
+        //         // Mark the modal as shown in local storage
+        //         localStorage.setItem('modalShown', 'true');
+        //     }
+        // });
 
         function submitForm(event) {
             event.preventDefault();
